@@ -8,7 +8,8 @@
  */
 
 export const addUp = (num) => {
-  if (typeof num !== 'number' || num > 1000) {
+  if (typeof num !== 'number' || num < 0 || num > 1000) {
+    alert('Use only a number between 0 and 1000');
     throw new Error('Use only a number between 0 and 1000');
   }
 
